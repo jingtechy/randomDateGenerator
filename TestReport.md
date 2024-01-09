@@ -17,6 +17,19 @@
     - *Recommendation:* Consider implementing an upper limit for the number of dates to be generated to enhance stability and prevent system overload.
 
 
+4. **Found a Bug:**
+   
+   - *Steps to Reproduce:* Enter the number 1000000 in the textbox for "How many dates to generate".
+   - *Issue:* Memory or stack overflow issue, exceeding available system resources and causing a program crash.
+   - *Solution:* Optimize the code for large data or restrict input ranges to prevent such issues.
+
+
+  <p align="center">
+  <img src="src/test/resources/bug1.png" width="50%" height="50%">
+</p>
+
+
+
 ## Textboxes for Start date and End date:
 
 1. **Date Sequence Validation:**
@@ -44,9 +57,16 @@
 3. **Found a Bug:**
 
    - *Steps to Reproduce:* Enter the custom date format 'YYYY-month-d-h-m-s' into the designated textbox.
+   - *Issue:* Data format or code issue.
+   - *Solution:* Implement distinct textboxes for each date component and add character restrictions to prevent an unrecognizable date format.
 
 
-   ![](src/test/resources/bug1.png)
+  <p align="center">
+  <img src="src/test/resources/bug2.png" width="75%" height="75%">
+</p>
+
+
+
 
 
 
